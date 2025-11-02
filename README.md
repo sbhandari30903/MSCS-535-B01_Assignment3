@@ -50,10 +50,3 @@ Each run prints the plaintext along with the randomly generated key and cipherte
 
 The convenience method `secureHandle(HttpRequest request)` demonstrates how to combine these defenses before invoking business logic. Adapt the `HttpRequest` and `HttpResponse` helpers to match your web framework, or inject custom implementations into the constructor for advanced scenarios.
 
-## Next Steps
-
-- Swap the placeholder business logic in `secureHandle` with your real handler once the request passes validation.
-- Persist CSRF tokens in a distributed session store if you deploy behind multiple servers.
-- Extend the input validator with context-aware rules for application-specific parameters.
-
-These examples are intentionally lightweight but provide a solid foundation for discussing real-world secure web application design.
